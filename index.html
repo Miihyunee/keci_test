@@ -1,0 +1,1670 @@
+<html lang="ko" class="custom-scrollbars"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="">
+    <title>KECI ON</title>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Global stylesheets -->
+<link href="/webjars/limitless-theme/assets/fonts/inter/inter.css" rel="stylesheet" type="text/css">
+<link href="/webjars/limitless-theme/assets/icons/phosphor/styles.min.css" rel="stylesheet" type="text/css">
+<link href="/webjars/limitless-theme/assets/icons/fontawesome/styles.min.css" rel="stylesheet" type="text/css">
+<link href="/webjars/limitless-theme/all.min.css" id="stylesheet" rel="stylesheet" type="text/css">
+<!-- /global stylesheets -->
+
+<!-- Core JS files -->
+<script src="/webjars/limitless-theme/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+
+<!-- /core JS files -->
+
+<!-- Theme JS files -->
+<script src="/webjars/limitless-theme/app.js"></script>
+<!-- /theme JS files -->
+
+
+<link href="/vendor/datatables/datatables.min.css" rel="stylesheet" type="text/css">
+<link href="/css/hr/style.css" rel="stylesheet" type="text/css">
+<link href="/css/common/global.css" rel="stylesheet" type="text/css">
+
+<script src="/js/lib/jquery-3.7.1.min.js"></script>
+<script src="/js/lib/jquery.serialize-object.min.js"></script>
+<script src="/js/lib/sweetalert2.all.min.js"></script>
+<script src="/js/core.js" type="module"></script>
+<script src="/js/global.js"></script>
+<script src="/js/impl/timeoutUtils.js"></script>
+<script src="/js/impl/select2Utils.js"></script>
+<script src="/vendor/crypto-js/crypto-js.min.js"></script>
+<script src="/vendor/datatables/datatables.js"></script>
+<script src="/js/impl/datatablesUtils.js"></script>
+<script src="/vendor/moment/moment-with-locales.min.js"></script>
+<script src="/vendor/j-timeout/jTimeout.js"></script>
+<script type="text/javascript">
+    if (typeof window['_DEFAULT_DEPT'] === 'undefined') {
+        window['_DEFAULT_DEPT'] = '6614';
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        WizUI.handleSidebarFold('hr');
+    });
+    $(() => {
+        WizUI.expandMenu(true);
+        WizUI.createBreadcrumb();
+    });
+</script>
+
+
+
+<style id="loading-style">#loading-spinner{width:100%;height:100%;top:0;left:0;position:fixed;background:rgba(255,255,255,1);z-index:999999;text-align:center;display:none;}.spinner{position:absolute;top:50%;left:50%;border:16px solid #f3f3f3;border-top:16px solid #3498db;border-radius:50%;width:120px;height:120px;animation:spin 1.8s linear infinite;margin:-50px 0 0 -50px;}@keyframes spin {0%{transform: rotate(0deg);}100%{transform:rotate(360deg);}}</style><script src="https://on.keci.or.kr/vendor/wiz-upload/lib/tus.min.js" async=""></script></head>
+<body class="">
+<!-- Page content -->
+<div class="page-content wrapper" style="opacity: 1;">
+    <!-- Main sidebar -->
+    <div class="sidebar sidebar-dark sidebar-main sidebar-expand-lg">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Sidebar header -->
+<div class="sidebar-section bg-bla9ck bg-opacity-10 border-bottom border-bottom-white border-opacity-10 bg-sidebar-header">
+    <div class="sidebar-logo d-flex justify-content-center align-items-center">
+        
+        <a href="javascript:void(0)" class="navbar-nav-link rounded" onclick="fnMemberAuthPageChange('USER', 'MAIN', '/')">
+            <img src="/images/logos/keci_white.png" class="sidebar-logo-icon" alt="">
+            <span class="fw-semibold text-white fs-4 sidebar-resize-hide ms-3">KECI ON</span>
+        </a>
+        
+
+        <div class="sidebar-resize-hide ms-auto">
+            <button type="button" class="btn btn-flat-white btn-icon btn-sm rounded-pill border-transparent sidebar-control sidebar-main-resize d-none d-lg-inline-flex">
+                <i class="ph-arrows-left-right"></i>
+            </button>
+
+            <button type="button" class="btn btn-flat-white btn-icon btn-sm rounded-pill border-transparent sidebar-mobile-main-toggle d-lg-none">
+                <i class="ph-x"></i>
+            </button>
+        </div>
+    </div>
+</div>
+<!-- /sidebar header -->
+
+<!-- Sidebar content -->
+<div class="sidebar-content">
+
+    <div class="sidebar-section user-profile-wrap">
+        <div class="collapse show" id="sidebar-user">
+            <div class="sidebar-section-body">
+                <div class="d-flex justify-content-center">
+                    <div class="user-profile rounded-pill overflow-hidden">
+                        
+                            
+                            
+                                <img src="/hr/file/content-image/6536/eb1ed19f-ed4e-4077-a045-5d4874cc3c61" class="img-fluid h-100 w-100" style="object-fit: cover; object-position: center;" alt="프로필 사진">
+                            
+                        
+                    </div>
+
+                    <div class="flex-fill sidebar-resize-hide ms-3">
+                        <div class="fw-semibold fs-lg">
+                            
+                            박미현
+                        </div>
+                        <div class="fs-sm lh-1 opacity-50 mt-1">
+                            정보안전팀
+                        </div>
+                    </div>
+
+                    <div class="flex-fill sidebar-resize-hide ms-2">
+                        <div class="fs-lg">
+                        
+                            
+                        
+                        
+                        </div>
+                        <div class="fs-sm lh-1 opacity-50 mt-1">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="sidebar-section-body sidebar-resize-hide">
+                <div class="d-flex justify-content-around align-items-center">
+                    <a href="/hr/member/my-page/pw-update" class="btn btn-flat-light">
+                        내정보수정
+                    </a>
+                    <button type="button" class="btn btn-flat-light" onclick="CommonUtils.logout('/hr/logout')">
+                        로그아웃
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main navigation -->
+    <div class="sidebar-section">
+        <ul class="nav nav-sidebar" data-nav-type="accordion">
+            
+                
+                    <li class="nav-item-header">
+                        <div class="text-uppercase fs-lg lh-sm opacity-50 sidebar-resize-hide d-flex align-items-center justify-content-between" style="cursor:pointer;">
+                            <span>인사</span>
+                            <i class="ph-caret-right toggle-icon"></i>
+                        </div>
+                    </li>
+                    
+
+
+
+
+
+    <li class="nav-item " style="display: none;">
+        <a href="/hr/user/emp/my-emp-info" class="nav-link">
+            
+                
+                    <i class="ph-address-book"></i>
+                
+            
+            <span data-page-desc="나의 인사정보">나의 인사정보</span>
+        </a>
+        
+    </li>
+
+    <li class="nav-item " style="display: none;">
+        <a href="/hr/emp-org-chart/list" class="nav-link">
+            
+                
+                    <i class="ph-users"></i>
+                
+            
+            <span data-page-desc="조직도">조직도</span>
+        </a>
+        
+    </li>
+
+    <li class="nav-item " style="display: none;">
+        <a href="/hr/user/emp/cert/list" class="nav-link">
+            
+                
+                    <i class="ph-file-text"></i>
+                
+            
+            <span data-page-desc="증명서 조회 및 신청">증명서</span>
+        </a>
+        
+    </li>
+
+
+                
+                    <li class="nav-item-header">
+                        <div class="text-uppercase fs-lg lh-sm opacity-50 sidebar-resize-hide d-flex align-items-center justify-content-between" style="cursor:pointer;">
+                            <span>근태</span>
+                            <i class="ph-caret-right toggle-icon expanded"></i>
+                        </div>
+                    </li>
+                    
+
+
+
+
+
+    <li class="nav-item ">
+        <a href="/hr/user/att/att-request/list-my-approval" class="nav-link">
+            
+                
+                    <i class="ph-note"></i>
+                
+            
+            <span data-page-desc="">근태 신청 현황</span>
+        </a>
+        
+    </li>
+
+    <li class="nav-item nav-item-submenu nav-item-open">
+        <a href="#" class="nav-link">
+            
+                
+                    <i class="ph-note-pencil"></i>
+                
+            
+            <span data-page-desc="근태 신청">근태 신청</span>
+        </a>
+        
+            <ul class="nav-group-sub collapse show">
+                
+
+
+
+
+
+    <li class="nav-item ">
+        <a href="/hr/user/att/att-request/leave/add" class="nav-link">
+            
+                
+            
+            <span data-page-desc="휴가 신청">휴가 신청</span>
+        </a>
+        
+    </li>
+
+    <li class="nav-item ">
+        <a href="/hr/user/att/att-request/overtime/add" class="nav-link">
+            
+                
+            
+            <span data-page-desc="초과 근무 신청">초과 근무 신청</span>
+        </a>
+        
+    </li>
+
+    <li class="nav-item ">
+        <a href="/hr/user/att/att-request/bsns-tr/add" class="nav-link">
+            
+                
+            
+            <span data-page-desc="출장 신청">출장 신청</span>
+        </a>
+        
+    </li>
+
+    <li class="nav-item ">
+        <a href="/hr/user/att/att-request/bsns-tr-rprt/add" class="nav-link active">
+            
+                
+            
+            <span data-page-desc="출장 복명 신청">출장 복명 신청</span>
+        </a>
+        
+    </li>
+
+    <li class="nav-item ">
+        <a href="/hr/user/att/att-request/staggered-work/add" class="nav-link">
+            
+                
+            
+            <span data-page-desc="시차출퇴근 신청">시차출퇴근 신청</span>
+        </a>
+        
+    </li>
+
+    <li class="nav-item ">
+        <a href="/hr/user/att/att-request/flextime-work/add" class="nav-link">
+            
+                
+            
+            <span data-page-desc="탄력 근무 신청">탄력 근무 신청</span>
+        </a>
+        
+    </li>
+
+    <li class="nav-item ">
+        <a href="/hr/user/att/att-request/parenting-time-trgt/add" class="nav-link">
+            
+                
+            
+            <span data-page-desc="육아시간 대상자 신청">육아시간 대상자 신청</span>
+        </a>
+        
+    </li>
+
+    <li class="nav-item ">
+        <a href="/hr/user/att/att-request/parenting-time-usage/add" class="nav-link">
+            
+                
+            
+            <span data-page-desc="육아시간 사용 신청">육아시간 사용 신청</span>
+        </a>
+        
+    </li>
+
+    <li class="nav-item ">
+        <a href="/hr/user/att/att-request/childcare-period-work/add" class="nav-link">
+            
+                
+            
+            <span data-page-desc="육아기 단축근무 신청">육아기 단축근무 신청</span>
+        </a>
+        
+    </li>
+
+    <li class="nav-item ">
+        <a href="/hr/user/att/att-request/pregnancy-period-work/add" class="nav-link">
+            
+                
+            
+            <span data-page-desc="임신기 단축근무 신청">임신기 단축근무 신청</span>
+        </a>
+        
+    </li>
+
+
+            </ul>
+        
+    </li>
+
+    <li class="nav-item ">
+        <a href="/hr/user/att/att-request/list" class="nav-link">
+            
+                
+                    <i class="ph-pen-nib"></i>
+                
+            
+            <span data-page-desc="">근태 승인</span>
+        </a>
+        
+    </li>
+
+    <li class="nav-item nav-item-submenu">
+        <a href="#" class="nav-link">
+            
+                
+                    <i class="ph-briefcase"></i>
+                
+            
+            <span data-page-desc="근태 관리">근태 관리</span>
+        </a>
+        
+            <ul class="nav-group-sub collapse">
+                
+
+
+
+
+
+    <li class="nav-item ">
+        <a href="/hr/user/att/att-mng/calendar/view" class="nav-link">
+            
+                
+            
+            <span data-page-desc="캘린더">캘린더</span>
+        </a>
+        
+    </li>
+
+    <li class="nav-item ">
+        <a href="/hr/user/att/att-mng/att-log/list" class="nav-link">
+            
+                
+            
+            <span data-page-desc="출퇴근기록">출퇴근기록</span>
+        </a>
+        
+    </li>
+
+    <li class="nav-item ">
+        <a href="/hr/user/att/att-mng/leave-sttn/list" class="nav-link">
+            
+                
+            
+            <span data-page-desc="휴가 현황">휴가 현황</span>
+        </a>
+        
+    </li>
+
+    <li class="nav-item ">
+        <a href="/hr/user/att/att-mng/att-sttn/list" class="nav-link">
+            
+                
+            
+            <span data-page-desc="근태 현황">근태 현황</span>
+        </a>
+        
+    </li>
+
+    <li class="nav-item ">
+        <a href="/hr/user/att/att-mng/bsns-tr-sttn/list" class="nav-link">
+            
+                
+            
+            <span data-page-desc="출장 현황">출장 현황</span>
+        </a>
+        
+    </li>
+
+    <li class="nav-item ">
+        <a href="/hr/user/att/att-mng/overtime-sttn/list" class="nav-link">
+            
+                
+            
+            <span data-page-desc="초과근무 현황">초과근무 현황</span>
+        </a>
+        
+    </li>
+
+
+            </ul>
+        
+    </li>
+
+
+                
+                    <li class="nav-item-header">
+                        <div class="text-uppercase fs-lg lh-sm opacity-50 sidebar-resize-hide d-flex align-items-center justify-content-between" style="cursor:pointer;">
+                            <span>게시판</span>
+                            <i class="ph-caret-right toggle-icon"></i>
+                        </div>
+                    </li>
+                    
+
+
+
+
+
+    <li class="nav-item " style="display: none;">
+        <a href="/hr/bbs/post/notice/list" class="nav-link">
+            
+                
+                    <i class="ph-activity"></i>
+                
+            
+            <span data-page-desc="공지사항">공지사항</span>
+        </a>
+        
+    </li>
+
+    <li class="nav-item " style="display: none;">
+        <a href="/hr/bbs/post/archive/list" class="nav-link">
+            
+                
+                    <i class="ph-folder"></i>
+                
+            
+            <span data-page-desc="자료실">자료실</span>
+        </a>
+        
+    </li>
+
+    <li class="nav-item " style="display: none;">
+        <a href="/hr/bbs/post/manual/list" class="nav-link">
+            
+                
+                    <i class="ph-book-open"></i>
+                
+            
+            <span data-page-desc="매뉴얼">매뉴얼</span>
+        </a>
+        
+    </li>
+
+
+                
+            
+            
+        </ul>
+    </div>
+    <!-- /main navigation -->
+</div>
+<!-- /sidebar content -->
+
+    </div>
+
+    <!-- Main content -->
+    <div class="content-wrapper">
+        <!-- Main navbar -->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="navbar navbar-sm navbar-expand-lg navbar-static shadow py-1">
+    <div class="container-fluid">
+        <div class="d-flex d-lg-none">
+            <button type="button" class="navbar-toggler sidebar-mobile-main-toggle rounded">
+                <i class="ph-list"></i>
+            </button>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-mobile" aria-expanded="false">
+                <i class="ph-squares-four"></i>
+            </button>
+        </div>
+
+        
+        <div class="navbar-collapse order-2 order-lg-1 collapse" id="navbar-mobile" style="">
+            <ul class="navbar-nav mt-2 mt-lg-0">
+                
+                    
+                        
+                        
+                    
+                    
+                
+            </ul>
+        </div>
+
+        
+        <ul class="nav order-1 order-lg-2 ms-auto">
+            <li class="nav-item d-flex">
+                <div class="timer-info">
+                    <span id="loginTimer">58:37</span>
+                    <a href="javascript:void(0)" onclick="TimeoutUtils.doExtendLogin(true);">연장</a>
+                </div>
+            </li>
+
+            
+            <li class="nav-item nav-item-dropdown-lg dropdown">
+                <a href="#" class="navbar-nav-link align-items-center rounded p-1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="status-indicator-container rounded" style="border: 1px solid #dee1e6;">
+                        <i class="ph ph-user w-32px h-32px rounded" style="transform: translate(16%, 16%);"></i>
+                        <span class="status-indicator bg-success"></span>
+                    </div>
+                </a>
+
+                <div class="dropdown-menu dropdown-menu-end">
+
+                    <a href="/hr/member/my-page/pw-update" class="dropdown-item">내정보수정</a>
+                    <a href="javascript:void(0)" onclick="CommonUtils.logout('/hr/logout')" class="dropdown-item">로그아웃</a>
+                    
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    // TODO 테스트 로그인 팝업
+    function fnOpenModalTestLogin() {
+        const data = {
+        }
+        CommonUtils.layerHandler('/hr/test-login', data, 'modalTestLogin', 'static');
+    }
+
+    // TODO 테스트 로그인
+    function fnTestLogin(memberId, password = '!Q2w3e4r5t') {
+        const data = {
+            username: memberId,
+            password: password,
+        }
+
+        AjaxUtils.post('/hr/test-login', JSON.stringify(data), {hideBeforeSpinner: true})
+            .then(() => {
+                window.location.reload(true);
+            });
+    }
+</script>
+
+
+        <!-- Inner content -->
+        <div class="content-inner">
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Page header -->
+<div class="page-header page-header-light shadow">
+    <div class="page-header-content d-lg-flex border-top justify-content-between">
+        <div class="d-flex align-items-center">
+            <h5 class="breadcrumb-active mb-0">출장 복명 신청</h5>
+        </div>
+
+        <div class="d-flex">
+            <div class="breadcrumb py-2"><a href="/" class="breadcrumb-item"><i class="ph-house"></i></a><a href="#" class="breadcrumb-item">근태</a><a href="#" class="breadcrumb-item">근태 신청</a><span class="breadcrumb-item active">출장 복명 신청</span></div>
+        </div>
+    </div>
+</div>
+<!-- /page header -->
+<!-- Content area -->
+<div class="content">
+    
+    <form id="command" spellcheck="false" action="./add" method="post" autocomplete="off">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">신청자/승인자</h5>
+            </div>
+            <div class="card-body">
+                <div class="row mb-3 col-lg-8 offset-lg-2">
+                    <div class="col-lg flex-lg-1">
+                        <label class="col-form-label fw-semibold">신청자<span class="text-danger">*</span></label>
+                        <div class="input-group member-select">
+                            <input type="text" name="memberName" class="form-control member-select-name " value="박미현" readonly="" autocomplete="off">
+                            <input type="hidden" name="memberId" class="form-control member-select-id" value="10797">
+                            <input type="hidden" name="memberDept" class="form-control member-select-dept" value="6614">
+                            <input type="hidden" name="memberDuty" value="B71">
+                            <input type="hidden" name="memberPosition" value="B80">
+                            
+                                <button type="button" class="btn btn-light py-0" onclick="fnOpenModalMemberSingleSelect()">
+                                    <i class="ph-magnifying-glass m-1"></i>
+                                </button>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg flex-lg-1">
+                            <label class="col-form-label fw-semibold">승인자<span class="text-danger">*</span></label>
+                            <div class="input-group">
+                                <input type="text" name="approvalDto.approvalLine" class="form-control" readonly="" autocomplete="off">
+                                <button type="button" class="btn btn-light py-0 btn-approval-line" onclick="ApprovalUtils.fnOpenModalApprovalLine()">
+                                    <i class="ph-magnifying-glass m-1"></i>
+                                </button>
+                            </div>
+                            <div class="approvalArea"></div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="card" id="cardNotice" style="display: none;">
+            <div class="card-header d-flex flex-wrap">
+                <div>
+                    <h5 class="mb-0">신청 안내</h5>
+                </div>
+                <div class="d-inline-flex align-items-center ms-auto">
+                    <a class="text-body mx-2" data-card-action="collapse">
+                        <i class="ph-caret-down"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="collapse">
+                <div class="card-body">
+                    <textarea id="editor"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">신청 정보</h5>
+            </div>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="card-body">
+    <div class="col-lg-8 offset-lg-2">
+        <div class="row">
+            <div class="mb-3 d-flex justify-content-end">
+                <a href="javascript:void(0);" class="btn btn-outline-primary" onclick="fnOpenModalBsnsTrList()">출장
+                    선택</a>
+                <input type="hidden" name="bsnsTrSeq" readonly="">
+            </div>
+            <div class="mb-3">
+                <label class="col-form-label fw-semibold">동행자</label>
+                <div class="input-group">
+                    <input type="text" class="form-control companion-select-name" readonly="" autocomplete="off">
+                    <div class="companionArea"><div class="member" data-companion-key="10797">
+                <input type="hidden" name="companions[].memberId" value="10797">
+                <input type="hidden" name="companions[].memberName" value="박미현">
+                <input type="hidden" name="companions[].memberDept" value="6614">
+                <input type="hidden" name="companions[].memberDuty" value="B71">
+                <input type="hidden" name="companions[].memberPosition" value="B80">
+            </div></div>
+                    <button type="button" class="btn btn-light py-0" onclick="fnOpenCompanionMemberSingleSelect()">
+                        <i class="ph-magnifying-glass m-1"></i>
+                    </button>
+                </div>
+                <div class="mt-1 companion-btn-area gap-1 d-flex flex-wrap">            <div class="badge bg-primary bg-opacity-75 d-inline-flex align-items-center">박미현
+                
+            </div></div>
+            </div>
+            <div class="mb-3">
+                <label class="col-form-label fw-semibold">출장지 구분<span class="text-danger">*</span></label>
+                <div class="py-2">
+                    
+                        <div class="form-check form-check-inline">
+                            <label class="form-check-label">
+                                <input type="radio" name="domIntlType" value="W" class="form-check-input">근무지 내
+                            </label>
+                        </div>
+                    
+                        <div class="form-check form-check-inline">
+                            <label class="form-check-label">
+                                <input type="radio" name="domIntlType" value="D" class="form-check-input">국내
+                            </label>
+                        </div>
+                    
+                        <div class="form-check form-check-inline">
+                            <label class="form-check-label">
+                                <input type="radio" name="domIntlType" value="I" class="form-check-input">국외
+                            </label>
+                        </div>
+                    
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="col-form-label fw-semibold">
+                    출장 기간
+                    <span class="text-danger">*</span></label>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <label class="col-form-label">시작일시</label>
+                        <div class="row">
+                            <div class="col-md-6 mb-1">
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                                        <i class="ph-calendar"></i>
+                                    </span>
+                                    <input type="text" name="bsnsTrStartDate" class="form-control datepicker-input" autocomplete="off" placeholder="년-월-일" maxlength="10">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                                        <i class="ph-clock"></i>
+                                    </span>
+                                    <input type="text" name="bsnsTrStartTime" class="form-control timepicker flex-grow-1" readonly="" autocomplete="off" style="display: none;"><input type="text" class="form-control timepicker flex-grow-1 flex-0 me-1 ui-timepicker-hour" readonly="" autocomplete="off" id="bsnsTrStartTime-hour" placeholder="시간"><input type="text" class="form-control timepicker flex-grow-1 flex-0 ui-timepicker-minute" readonly="" autocomplete="off" id="bsnsTrStartTime-minute" placeholder="분">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <label class="col-form-label">종료일시</label>
+                        <div class="row">
+                            <div class="col-md-6 mb-1">
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                                        <i class="ph-calendar"></i>
+                                    </span>
+                                    <input type="text" name="bsnsTrEndDate" class="form-control datepicker-input" autocomplete="off" placeholder="년-월-일" maxlength="10">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                                        <i class="ph-clock"></i>
+                                    </span>
+                                    <input type="text" name="bsnsTrEndTime" class="form-control timepicker flex-grow-1" readonly="" autocomplete="off" style="display: none;"><input type="text" class="form-control timepicker flex-grow-1 flex-0 me-1 ui-timepicker-hour" readonly="" autocomplete="off" id="bsnsTrEndTime-hour" placeholder="시간"><input type="text" class="form-control timepicker flex-grow-1 flex-0 ui-timepicker-minute" readonly="" autocomplete="off" id="bsnsTrEndTime-minute" placeholder="분">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="col-form-label fw-semibold">
+                    교통 수단
+                    <span class="text-danger">*</span></label>
+                <div>
+                    
+                        <div class="form-check form-check-inline py-2">
+                            <label class="form-check-label">
+                                <input type="checkbox" name="vehicleInfo.cd[]" value="OWN_VHC" class="form-check-input">자가용차량
+                            </label>
+                        </div>
+                    
+                        <div class="form-check form-check-inline py-2">
+                            <label class="form-check-label">
+                                <input type="checkbox" name="vehicleInfo.cd[]" value="BSN_VHC" class="form-check-input">업무용차량(관용차 등)
+                            </label>
+                        </div>
+                    
+                        <div class="form-check form-check-inline py-2">
+                            <label class="form-check-label">
+                                <input type="checkbox" name="vehicleInfo.cd[]" value="PUB_TRN" class="form-check-input">대중교통
+                            </label>
+                        </div>
+                    
+                        <div class="form-check form-check-inline py-2">
+                            <label class="form-check-label">
+                                <input type="checkbox" name="vehicleInfo.cd[]" value="AIR_PLN" class="form-check-input">항공편
+                            </label>
+                        </div>
+                    
+                        <div class="form-check form-check-inline py-2">
+                            <label class="form-check-label">
+                                <input type="checkbox" name="vehicleInfo.cd[]" value="ETC_TRN" class="form-check-input">기타
+                            </label>
+                        </div>
+                    
+                </div>
+            </div>
+            <div class="mb-3 col-md-6">
+                <label class="col-form-label fw-semibold">출장지<span class="text-danger">*</span></label>
+                <input type="text" name="location" class="form-control" placeholder="출장지" maxlength="90" autocomplete="off">
+            </div>
+            <div class="mb-3 col-md-6">
+                <label class="col-form-label fw-semibold">방문처<span class="text-danger">*</span></label>
+                <input type="text" name="site" class="form-control" placeholder="방문처" maxlength="90" autocomplete="off">
+            </div>
+            <div class="mb-3">
+                <label class="col-form-label fw-semibold">출장 결과</label>
+                <textarea name="workResult" class="form-control" maxlength="950" oninput="autoResize(event.target)" style="max-height: 500px;" placeholder="출장 결과"></textarea>
+            </div>
+            <div class="mb-3">
+                <label class="col-form-label fw-semibold">업무 내용</label>
+                <textarea name="workDetail" class="form-control" maxlength="950" oninput="autoResize(event.target)" style="max-height: 500px;" placeholder="업무 내용"></textarea>
+            </div>
+            <div class="row mb-3">
+                <label class="col-form-label fw-semibold">출장비 내역</label>
+                <div class="table-responsive small">
+                    <table class="table table-fixed " style="table-layout: fixed">
+                        <colgroup>
+                            <col style="width:auto; min-width:100px">
+                            <col style="width:auto; min-width:100px">
+                            <col style="width:auto; min-width:100px">
+                            <col style="width:auto; min-width:100px">
+                            <col style="width:auto; min-width:100px">
+                            <col style="width:auto; min-width:100px">
+                            <col style="width:auto; min-width:100px">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th class="px-1 text-center">이름</th>
+                            <th class="px-1 text-center">일비</th>
+                            <th class="px-1 text-center">식비</th>
+                            <th class="px-1 text-center">숙박비</th>
+                            <th class="px-1 text-center">교통비</th>
+                            <th class="px-1 text-center">기타여비</th>
+                            <th class="px-1 text-center">합계</th>
+                        </tr>
+                        </thead>
+                        <tbody id="companionCosts">
+            <tr class="costs">
+                <input type="hidden" name="costs[].memberId" value="10797">
+                <input type="hidden" name="costs[].memberName" value="박미현">
+                <td class="px-1">박미현</td>
+                <td class="px-1"><input type="text" name="costs[].dayCost" class="form-control form-control-sm text-end" placeholder="일비" value="0" maxlength="9"></td>
+                <td class="px-1"><input type="text" name="costs[].foodCost" class="form-control form-control-sm text-end" placeholder="식비" value="0" maxlength="9"></td>
+                <td class="px-1"><input type="text" name="costs[].stayCost" class="form-control form-control-sm text-end" placeholder="숙박비" value="0" maxlength="9"></td>
+                <td class="px-1"><input type="text" name="costs[].transCost" class="form-control form-control-sm text-end" placeholder="교통비" value="0" maxlength="9"></td>
+                <td class="px-1"><input type="text" name="costs[].otherCost" class="form-control form-control-sm text-end" placeholder="기타여비" value="0" maxlength="9"></td>
+                <td class="px-1"><input type="text" name="costs[].totalCost" class="form-control form-control-sm text-end" placeholder="합계" value="0" maxlength="9" readonly=""></td>
+            </tr></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row mb-3 totalCost ">
+                <div class="col-md-2 col-12 text-center">
+                    <label class="col-form-label fw-semibold">출장비 총 합계</label>
+                    <input type="text" name="totalCost" class="form-control text-end border-0 fw-semibold" value="0" readonly="" autocomplete="off">
+                </div>
+                <div class="col-md-2 col-6 text-center">
+                    <input type="hidden" name="totalCost" value="2,220">
+                    <label class="col-form-label fw-semibold">일비</label>
+                    <input type="text" name="dayCost" class="form-control text-end border-0" placeholder="일비" value="0" maxlength="9" readonly="" autocomplete="off">
+                </div>
+                <div class="col-md-2 col-6 text-center">
+                    <label class="col-form-label fw-semibold">식비</label>
+                    <input type="text" name="foodCost" class="form-control text-end border-0" placeholder="식비" value="0" maxlength="9" readonly="" autocomplete="off">
+                </div>
+                <div class="col-md-2 col-6 text-center">
+                    <label class="col-form-label fw-semibold">숙박비</label>
+                    <input type="text" name="stayCost" class="form-control text-end border-0" placeholder="숙박비" value="0" maxlength="9" readonly="" autocomplete="off">
+                </div>
+                <div class="col-md-2 col-6 text-center">
+                    <label class="col-form-label fw-semibold">교통비</label>
+                    <input type="text" name="transCost" class="form-control text-end border-0" placeholder="교통비" value="0" maxlength="9" readonly="" autocomplete="off">
+                </div>
+                <div class="col-md-2 col-6 text-center">
+                    <label class="col-form-label fw-semibold">기타 여비</label>
+                    <input type="text" name="otherCost" class="form-control text-end border-0" placeholder="기타 여비" value="0" maxlength="9" readonly="" autocomplete="off">
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="col-form-label fw-semibold">첨부파일</label>
+                <div id="file" class="wiz-upload"><div class="file-drop-wrap"><label class="drag-guide">이 곳에 파일을 드래그 하세요. <div>또는 <span>파일선택</span></div><input type="file" multiple=""></label></div><div class="file-list-wrap"><div class="file-list-header"><p>파일 이름</p><p>파일 크기</p></div><div class="file-list-body"><ul class="file-list" id="fileList"><li class="file-item no-file-msg"><label class="file-info"><span>업로드된 파일이 존재하지 않습니다</span></label></li></ul></div><div class="file-list-footer">
+                    <div class="list-summary">
+                        (파일 당 용량 제한 <span class="upload-limit">25 MB</span>)
+                        <span class="upload-count">0</span>개,
+                        <span class="upload-total-size">0MB</span>
+                    </div>
+                    <div class="list-controls">
+                        <button type="button" class="btn-add-file">파일추가</button>
+                        <button type="button" class="btn-delete-file">파일삭제</button>
+                    </div>
+                </div></div></div>
+            </div>
+        </div>
+    </div>
+</div>
+<link href="/vendor/wiz-upload/wiz-upload.css" rel="stylesheet">
+<script src="/vendor/wiz-upload/wiz-upload-manager.min.js"></script>
+<script>
+    $(() => {
+        new WizUpload.Upload({
+                selector: 'file',
+                uploadUrl: '/hr/file/ajax/upload',
+                maxFileSize: 25,
+            }
+        );
+        $('.timepicker').timepicker();
+
+        DateUtils.initDatePicker(['input[name="bsnsTrStartDate"]', 'input[name="bsnsTrEndDate"]']);
+        // $('[name$=Cost]').on('input change', fnProcessParseNumberToCurrency);
+        $(document).on('input change','[name^="costs["]', fnProcessParseNumberToCurrency);
+
+        fnResetCompanion();
+        fnResetCompanionCosts();
+
+        $(document).on('click', 'button[data-companion-key]', function () {
+            const memberId = $(this).data('companion-key');
+            $(this).closest('.badge').remove();
+            $(`[data-companion-key="${memberId}"]`).remove();
+            requestNameJoin();
+            fnSetCompanionCosts();
+        });
+
+    })
+
+    function fnUpdateMemberId(){
+        fnResetCompanion();
+        fnResetCompanionCosts();
+    }
+
+    function fnResetCompanion(){
+        $('div.companionArea').empty();
+        $('div.companion-btn-area').empty();
+        const data = FormUtils.getFormData().data;
+        fnCbCompanionSingleSelect(data);
+        $('.btn-delete-member').remove();
+    }
+
+    function fnOpenCompanionMemberSingleSelect() {
+        const data = {
+            searchType: 'ALL',
+            callback:'fnCbCompanionSingleSelect'
+        }
+        CommonUtils.layerHandler('/hr/member/cmn/single-select', data, 'modalMemberSingleSelect', 'static');
+    }
+
+    function fnCbCompanionSingleSelect(result) {
+        const memberArea = $('div.companionArea');
+        const memberBtnArea = $('div.companion-btn-area');
+        if ($(`[data-companion-key="${result.memberId}"]`).length > 0) {
+            AlertUtils.flashAlertText('이미 선택되었습니다.')
+            return;
+        }
+
+        const membersHtml =
+            `<div class="member" data-companion-key="${result.memberId}">
+                <input type="hidden" name="companions[].memberId" value="${result.memberId}"/>
+                <input type="hidden" name="companions[].memberName" value="${result.memberName}"/>
+                <input type="hidden" name="companions[].memberDept" value="${result.memberDept||''}"/>
+                <input type="hidden" name="companions[].memberDuty" value="${result.memberDuty||''}"/>
+                <input type="hidden" name="companions[].memberPosition" value="${result.memberPosition||''}"/>
+            </div>`
+
+        const btnTitle = result.memberDeptName ? `${result.memberName}(${result.memberDeptName})` : `${result.memberName}`
+        const memberRequestBtn =
+            `            <div class="badge bg-primary bg-opacity-75 d-inline-flex align-items-center">${btnTitle}
+                <button type="button" class="btn btn-sm p-0 btn-delete-member" data-companion-key="${result.memberId}">
+                    <i class="ph-x ph-sm text-white"></i>
+                </button>
+            </div>`;
+        memberArea.append(membersHtml);
+        memberBtnArea.append(memberRequestBtn);
+
+        requestNameJoin();
+        fnSetCompanionCosts();
+    }
+
+    function requestNameJoin() {
+        const joinedNames = $('[name=companions\\[\\]\\.memberName]')
+            .map(function () {
+                return $(this).val();
+            })
+            .get()
+            .join(', ');
+        $('input.companion-select-name').val(joinedNames);
+    }
+
+    function fnValidateData(data) {
+        if (StringUtils.isBlank(data.domIntlType)) {
+            AlertUtils.flashAlertText('출장유형(출장지구분)을 선택해주세요', 'warning');
+            return false;
+        }
+        if (StringUtils.isBlank(data.bsnsTrStartDate)) {
+            AlertUtils.flashAlertText('출장 시작일자을 입력해주세요', 'warning');
+            return false;
+        }
+        if (StringUtils.isBlank(data.bsnsTrStartTime) || !TimeUtils.isValidTimeValue(data.bsnsTrStartTime)) {
+            AlertUtils.flashAlertText('출장 시작시간을 확인해주세요', 'warning');
+            return false;
+        }
+        if (StringUtils.isBlank(data.bsnsTrEndDate)) {
+            AlertUtils.flashAlertText('출장 종료일자을 입력해주세요', 'warning');
+            return false;
+        }
+        if (StringUtils.isBlank(data.bsnsTrEndTime) || !TimeUtils.isValidTimeValue(data.bsnsTrEndTime)) {
+            AlertUtils.flashAlertText('출장 종료시간을 확인해주세요', 'warning');
+            return false;
+        }
+        if (data.bsnsTrStartDate > data.bsnsTrEndDate) {
+            AlertUtils.flashAlertText('시작 일자는 종료 일자보다 늦을 수 없습니다.', 'warning');
+            return false;
+        }
+        if (!data.vehicleInfo || data.vehicleInfo.cd.length === 0) {
+            AlertUtils.flashAlertText('교통수단을 선택해주세요', 'warning');
+            return false;
+        }
+        if (StringUtils.isBlank(data.location)) {
+            AlertUtils.flashAlertText('출장지를 입력해주세요', 'warning');
+            return false;
+        }
+        if (StringUtils.isBlank(data.site)) {
+            AlertUtils.flashAlertText('방문처를 입력해주세요', 'warning');
+            return false;
+        }
+        return true;
+    }
+
+    /** 화페 파싱 함수 */
+    function fnProcessParseNumberToCurrency(event) {
+        StringUtils.numberCurrency(event);
+        event.target.value = event.target.value || '0';
+        fnCalcSum();
+
+        // 합계 산출 메서드
+        function fnCalcSum() {
+            const $cost = $(event.target).closest('.costs');
+            const $costElems = $cost.find('input[name^="costs["][type=text]').not('[name$=totalCost]');
+            let companionSum = 0;
+            $costElems.each((idx, elem) => {
+                companionSum += Number(StringUtils.unComma($(elem).val()))
+            });
+            const result = StringUtils.numberFormat(companionSum);
+            $cost.find('input[name$=totalCost]').val(result);
+
+            const costTypeName = $(event.target).attr('name').replaceAll('costs[].','');
+            const $costTypeElems = $(`input[name="costs[].${costTypeName}"]`);
+            let costTypeSum = 0;
+            $costTypeElems.each((idx, elem) => {
+                costTypeSum += Number(StringUtils.unComma($(elem).val()))
+            });
+            const result2 = StringUtils.numberFormat(costTypeSum);
+            const $totalCostType = $(`[name=${costTypeName}]`)
+            $totalCostType.val(result2);
+
+            const $totalElems = $('#companionCosts').find('input[name^="costs[].totalCost"]');
+            let totalSum = 0;
+            $totalElems.each((idx, elem) => {
+                totalSum += Number(StringUtils.unComma($(elem).val()))
+            });
+            const result3 = StringUtils.numberFormat(totalSum);
+            $('input[name="totalCost"]').val(result3);
+        }
+    }
+
+    /** 출장 선택 팝업 함수 */
+    function fnOpenModalBsnsTrList() {
+        const data = {}
+        CommonUtils.layerHandler('./modal/bsns-tr-list', data, 'modalBsnsTrList', 'static');
+    }
+
+    /** 팝업에서 선택한 출장 내용 적용 함수 */
+    function fnApplyCallBackData(data) {
+        const {
+            bsnsTrSeq,
+            memberId,
+            memberName,
+            domIntlType,
+            bsnsTrStartDate,
+            bsnsTrStartTime,
+            bsnsTrEndDate,
+            bsnsTrEndTime,
+            location,
+            site,
+            workDetail
+        } = data;
+
+        $('[name=bsnsTrSeq]').val(bsnsTrSeq);
+        $('[name=memberId]').val(memberId).trigger('change');
+        $('[name=memberName]').val(memberName).trigger('change');
+        $('[name=domIntlType]').filter((idx, elem) => $(elem).val() === domIntlType).prop('checked', true);
+        $('[name=bsnsTrStartDate]').val(bsnsTrStartDate)
+        $('[name=bsnsTrStartTime]').val(bsnsTrStartTime)
+        $('[name=bsnsTrEndDate]').val(bsnsTrEndDate)
+        $('[name=bsnsTrEndTime]').val(bsnsTrEndTime)
+
+        const startTime = bsnsTrStartTime?.split(':')
+        const endTime = bsnsTrEndTime?.split(':')
+        $('[name=bsnsTrStartTime]').parent().find('.ui-timepicker-hour').val(startTime[0]);
+        $('[name=bsnsTrStartTime]').parent().find('.ui-timepicker-minute').val(startTime[1]);
+        $('[name=bsnsTrEndTime]').parent().find('.ui-timepicker-hour').val(endTime[0]);
+        $('[name=bsnsTrEndTime]').parent().find('.ui-timepicker-minute').val(endTime[1]);
+        $('[name=location]').val(location)
+        $('[name=site]').val(site)
+        $('[name=workDetail]').val(workDetail)
+
+        fnGetCompanion(data);
+    }
+
+    function fnGetCompanion(data){
+        fnResetCompanion();
+        fnResetCompanionCosts();
+        AjaxUtils.get(`/hr/user/att/att-request/companion/${data.bsnsTrSeq}`
+            , null
+            , {hideBeforeSpinner: true})
+            .then((companions)=>{
+                for(const companion of companions){
+                    if(companion.memberId !== data.memberId){
+                        fnCbCompanionSingleSelect(companion)
+                        fnSetCompanionCosts(companion)
+                    }
+                }
+            })
+    }
+
+    function fnSetCompanionCosts(){
+        fnResetCompanionCosts();
+        const data = FormUtils.getFormData().data;
+        const companions = data.companions;
+        const costsArea = $('#companionCosts');
+        for(const companion of companions){
+            if(companion.memberId !== data.memberId){
+                const membersHtml = `
+            <tr class="costs">
+                <input type="hidden" name="costs[].memberId" value="${companion.memberId}">
+                <input type="hidden" name="costs[].memberName" value="${companion.memberName}">
+                <td class="px-1">${companion.memberName}</td>
+                <td class="px-1"><input type="text" name="costs[].dayCost" class="form-control form-control-sm text-end" placeholder="일비"
+                           value="0" maxlength="9"></td>
+                <td class="px-1"><input type="text" name="costs[].foodCost" class="form-control form-control-sm text-end" placeholder="식비"
+                           value="0" maxlength="9"></td>
+                <td class="px-1"><input type="text" name="costs[].stayCost" class="form-control form-control-sm text-end" placeholder="숙박비"
+                           value="0" maxlength="9"></td>
+                <td class="px-1"><input type="text" name="costs[].transCost" class="form-control form-control-sm text-end" placeholder="교통비"
+                           value="0" maxlength="9"></td>
+                <td class="px-1"><input type="text" name="costs[].otherCost" class="form-control form-control-sm text-end" placeholder="기타여비"
+                           value="0" maxlength="9"></td>
+                <td class="px-1"><input type="text" name="costs[].totalCost" class="form-control form-control-sm text-end" placeholder="합계"
+                           value="0" maxlength="9" readonly></td>
+            </tr>`
+                costsArea.append(membersHtml)
+            }
+        }
+    }
+
+    function fnResetCompanionCosts(){
+        const costsArea = $('#companionCosts').empty();
+        const data = FormUtils.getFormData().data;
+        const membersHtml = `
+            <tr class="costs">
+                <input type="hidden" name="costs[].memberId" value="${data.memberId}">
+                <input type="hidden" name="costs[].memberName" value="${data.memberName}">
+                <td class="px-1">${data.memberName}</td>
+                <td class="px-1"><input type="text" name="costs[].dayCost" class="form-control form-control-sm text-end" placeholder="일비"
+                           value="0" maxlength="9"></td>
+                <td class="px-1"><input type="text" name="costs[].foodCost" class="form-control form-control-sm text-end" placeholder="식비"
+                           value="0" maxlength="9"></td>
+                <td class="px-1"><input type="text" name="costs[].stayCost" class="form-control form-control-sm text-end" placeholder="숙박비"
+                           value="0" maxlength="9"></td>
+                <td class="px-1"><input type="text" name="costs[].transCost" class="form-control form-control-sm text-end" placeholder="교통비"
+                           value="0" maxlength="9"></td>
+                <td class="px-1"><input type="text" name="costs[].otherCost" class="form-control form-control-sm text-end" placeholder="기타여비"
+                           value="0" maxlength="9"></td>
+                <td class="px-1"><input type="text" name="costs[].totalCost" class="form-control form-control-sm text-end" placeholder="합계"
+                           value="0" maxlength="9" readonly></td>
+            </tr>`
+        costsArea.append(membersHtml)
+
+        fnResetTotalCost();
+    }
+
+    function fnResetTotalCost(){
+        const $totalCosts = $('.totalCost').find('[name$=Cost]');
+        $totalCosts.val('0');
+    }
+
+</script>
+
+            <div class="card-footer">
+                <div class="d-grid gap-1 d-md-flex justify-content-md-between col-lg-8 offset-lg-2">
+                    <button type="button" class="btn btn-outline-light" onclick="history.back()">취소</button>
+                    <button type="button" class="btn btn-primary" onclick="fnSave()">신청</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div id="evidenceForm">
+    </div>
+</div>
+
+<style>
+    .ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-read-only.ck-column-resize_disabled.ck-blurred {
+        max-height: none !important;
+        height: auto !important;
+        overflow: visible !important;
+        min-height: 100px;
+    }
+</style>
+<!-- /content area -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+
+<script src="/vendor/timepicker/jquery.timepicker-wvega-1.3.5.js"></script>
+<script type="text/javascript" src="/vendor/vanillajs-datepicker/datepicker-full.min.js"></script>
+<script src="/js/hr/approval/approvalUtils.js"></script>
+<script src="/js/hr/TimeUtils.js"></script>
+
+<link href="/vendor/ckeditor5/ckeditor5.css" rel="stylesheet">
+<script src="/vendor/ckeditor5/ckeditor5.umd.js"></script>
+<script src="/js/impl/ckeditorUtils.js"></script>
+
+<script>
+    $(() => {
+        fnApprovalLineLoad();
+        fnNoticeLoad()
+    });
+    /** 결재선 불러오기 */
+    const fnApprovalLineLoad = () => {
+        const data ={};
+        const url = `/hr/user/att/att-request/task-approval-line/bsns_tr_rprt`;
+
+        AjaxUtils.get(url, data, {hideBeforeSpinner: true})
+            .then(function (html) {
+                $('.approvalArea').empty().append(html);
+                const items = document.querySelectorAll('.approvalArea .approvalItem');
+                const itemCount = items.length;
+
+                if( itemCount === 0 ) return;
+
+                const names = Array.from(items)
+                    .map(item => item.querySelector('input[name$="approvalName"]').value)
+                    .join(', ');
+
+                $('[name=approvalDto\\.approvalLine]').val(names)
+                $('.btn-approval-line').remove();
+            });
+    }
+    /** 안내문구 불러오기 */
+    const fnNoticeLoad = () => {
+        const data ={};
+        const url = `/hr/user/att/att-request/task-notice/bsns_tr_rprt`;
+        AjaxUtils.get(url, data, {hideBeforeSpinner: true})
+            .then(function (html) {
+                if(html){
+                    $('#editor').empty().append(html);
+                    CKEditor.Viewer('#editor')
+                }else{
+                    $('#cardNotice').hide()
+                }
+            });
+    }
+
+    const fnSetTimepickerInterval = async ()=>{
+        const timepickers = $('.timepicker');
+        if(timepickers.length > 0){
+            const timeUnit = await fnTimeUnit();
+            if(timeUnit && timeUnit !== 1){
+                timepickers.timepicker('option','interval',timeUnit);
+                timepickers.prop('readonly', true);
+            }
+        }
+    }
+
+    const fnTimeUnit = () => {
+        const data = {};
+        const url = `/hr/user/att/att-request/task-time-unit/bsns_tr_rprt`;
+        return AjaxUtils.post(url, JSON.stringify(data), {hideBeforeSpinner: true})
+            .then((mins)=> {
+                return mins;
+            });
+    }
+
+    function fnOpenModalMemberSingleSelect(){
+        if (FormUtils.checkSubmit()) return;
+        const data = {
+            searchType: ('bsns_tr_rprt'.indexOf('bsns_tr') > -1)? 'ALL' : 'AGENT'
+        }
+        CommonUtils.layerHandler('/hr/member/cmn/single-select', data, 'modalMemberSingleSelect', 'static');
+    }
+
+    function fnCbMemberSingleSelect(result) {
+        $('input.member-select-name').val(result.memberName);
+        $('input.member-select-id').val(result.memberId).trigger('change');
+        $('input[name=memberDept]').val(result.memberDept);
+        $('input[name=memberDuty]').val(result.memberDuty);
+        $('input[name=memberPosition]').val(result.memberPosition);
+        if (typeof fnUpdateMemberId !== 'undefined') {
+            fnUpdateMemberId();
+        }
+    }
+
+    function fnGetData(formName = undefined, fnName = 'fnGetFormData') {
+        if (typeof formName === 'function') {
+            fnName = formName;
+            formName = undefined;
+        }
+        let formData;
+        if (typeof fnName === 'function') {
+            formData = fnName.apply(this, [formName]);
+        } else if (typeof window[fnName] === 'function') {// 문자열로 된 이름으로 함수 호출
+            formData = window[fnName](formName);
+        } else {
+            formData = FormUtils.getFormData(formName);
+        }
+        return formData;
+    }
+
+    /** 저장 함수 */
+    async function fnSave() {
+        if (!!FormUtils.checkSubmit()) return false;
+
+        const {url: url, data: data} = fnGetData();
+
+        if (!ApprovalUtils.processApproval(data)) return false;
+
+        const {url: evidenceUrl, data: evidenceData} = FormUtils.getFormData('formEvidence');
+
+        if(evidenceUrl && evidenceData){
+            if (!ApprovalUtils.processApproval(evidenceData, 'formEvidence')) {
+                return false;
+            }
+            if (!evidenceData.evidenceFileList || evidenceData.evidenceFileList.length === 0) {
+                AlertUtils.flashAlertText('증빙 파일을 첨부해주세요.');
+                return false;
+            }
+            data.evidenceApprovalDto = evidenceData.approvalDto;
+            data.evidenceApprovalDto.evidenceFileList = evidenceData.evidenceFileList;
+        }
+
+        const beforeSend = async () => {
+            if (StringUtils.isBlank(data.memberId)) {
+                AlertUtils.flashAlertText('신청자를 선택해주세요', 'warning');
+                return false;
+            }
+
+            if (typeof fnValidateData === 'function') {
+                return await Promise.resolve(fnValidateData(data)).then(result => {
+                    if (!result) return false;
+                    return true;
+                });
+            }
+        }
+
+        const options = {
+            success: data => {
+                AlertUtils.flashAlert(data.title, data.description, data.icon, data.callback);
+            }
+        }
+
+        const valid = await beforeSend();
+        if (!valid) return;
+
+        AjaxUtils.confirmSave(url, JSON.stringify(data), options);
+    }
+
+    /**
+     * 선택 일자 내에 중복되는 다른 신청을 확인
+     *
+     * @return {boolean}        false = 중복있음, true = 중복없음.
+     * */
+    async function fnGetDupAttRequest(data) {
+        const url = './request-dup-check'
+        const memberId = $('[name=memberId]').val();
+        data.memberId = memberId;
+        const result = await AjaxUtils.post(url, JSON.stringify(data), {
+            hideBeforeSpinner: true
+        });
+        if(result){
+            if (result.length > 0) {
+                const overlap = result[0];
+                const taskId = overlap.taskId.toLowerCase().replaceAll('_', '-');
+                const approvalSeq = overlap.approvalSeq;
+                if(memberId === '10797'){
+                    const msg = `${overlap.taskName}과(와) 중복 신청 불가합니다.
+                            (${overlap.overlapStartDate} - ${overlap.overlapEndDate})
+                            중복 근태 신청을 취소하신 후 진행해주세요.
+                            이미 신청된 ${overlap.taskName}의 상세 페이지로 이동하시겠습니까?`;
+                    AlertUtils.sweetConfirm('', msg, 'warning',
+                        function () {
+                            CommonUtils.gotoUrl(`/hr/user/att/att-request/${taskId}/view-my-approval/${approvalSeq}`);
+                        }
+                    );
+                }else{
+                    const msg = `${overlap.taskName}과(와) 중복 신청 불가합니다.
+                            (${overlap.overlapStartDate} - ${overlap.overlapEndDate})
+                            중복 근태 신청을 취소하신 후 진행해주세요.`;
+                    AlertUtils.flashAlertText(msg, 'warning');
+
+                }
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /**
+     * 선택 일자 내에 중복되는 진행 중인 유연근무 신청을 확인
+     *
+     * @param {string} startDate 중복체크 할 시작일
+     * @param {string} endDate   중복체크 할 종료일
+     * @return {boolean}        false = 중복있음, true = 중복없음.
+     * */
+    async function fnGetDupFlexworkAttRequest(startDate, endDate) {
+        const url = '/hr/user/att/att-request/request-overlapping-flexwork'
+        const memberId = $('[name=memberId]').val();
+        const data = {
+            memberId: memberId,
+            searchStartDate: startDate,
+            searchEndDate: endDate
+        };
+
+        const result = await AjaxUtils.post(url, JSON.stringify(data), {
+            hideBeforeSpinner: true
+        })
+        if(result){
+            if (result.length > 0) {
+                const overlap = result[0];
+                const taskId = overlap.taskId.toLowerCase().replaceAll('_', '-');
+                const approvalSeq = overlap.approvalSeq;
+                if(memberId === '10797'){
+                    const msg = `선택 일자를 포함한 ${overlap.taskName} 신청이 진행중입니다.
+                            (${overlap.overlapStartDate} - ${overlap.overlapEndDate})
+                            유연근무 승인 이후 신청이 가능합니다.
+                            이미 신청된 ${overlap.taskName}의 상세 페이지로 이동하시겠습니까?`;
+                    AlertUtils.sweetConfirm('', msg, 'warning',
+                        function () {
+                            CommonUtils.gotoUrl(`/hr/user/att/att-request/${taskId}/view-my-approval/${approvalSeq}`);
+                        }
+                    );
+                }else{
+                    const msg = `선택 일자를 포함한 ${overlap.taskName} 신청이 진행중입니다.
+                            (${overlap.overlapStartDate} - ${overlap.overlapEndDate})
+                            유연근무 승인 이후 신청이 가능합니다.`;
+                    AlertUtils.flashAlertText(msg, 'warning');
+                }
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /**
+     * 신청자 근무유형 유무 확인
+     * */
+    function fnGetEmpWorkType() {
+        const memberId = $('[name=memberId]').val();
+        const url = `/hr/user/att/cmn/emp-work-type/${memberId}`;
+        const msg = `근무유형이 없는 사용자입니다. 관리자에게 문의하세요.`;
+        return AjaxUtils.get(url, {}, {
+            hideBeforeSpinner: true
+        }).then(result => {
+            if(!result){
+                AlertUtils.flashAlertText(msg, 'error', function () {
+                    CommonUtils.goBack()
+                });
+            }
+        })
+    }
+
+</script>
+
+
+            <!-- Footer -->
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--footer-->
+
+        </div>
+    <div class="btn-to-top"><button class="btn btn-secondary btn-icon rounded-pill" type="button"><i class="ph-arrow-up"></i></button></div></div>
+<button type="button" class="quick-scroll" style="display: none">상단으로</button></div>
+
+
+<div class="dimm"></div><div class="layer-area"></div><div class="ui-timepicker-container ui-timepicker-hidden ui-helper-hidden" style="display: none;"><div class="ui-timepicker ui-widget ui-widget-content ui-menu ui-corner-all"><ul class="ui-timepicker-viewport"></ul></div></div><div class="datepicker datepicker-dropdown datepicker-orient-left datepicker-orient-top" style="left: 558.156px; top: 453.406px;"><div class="datepicker-picker"><div class="datepicker-header"><div class="datepicker-title" style="display: none;"></div><div class="datepicker-controls"><button type="button" class="btn prev-button prev-btn" tabindex="-1">«</button><button type="button" class="btn view-switch" tabindex="-1">2026년 05월</button><button type="button" class="btn next-button next-btn" tabindex="-1">»</button></div></div><div class="datepicker-main"><div class="datepicker-view"><div class="days"><div class="days-of-week"><span class="dow">일</span><span class="dow">월</span><span class="dow">화</span><span class="dow">수</span><span class="dow">목</span><span class="dow">금</span><span class="dow">토</span></div><div class="datepicker-grid"><span data-date="1777129200000" class="datepicker-cell day prev text-danger">26</span><span data-date="1777215600000" class="datepicker-cell day prev">27</span><span data-date="1777302000000" class="datepicker-cell day prev">28</span><span data-date="1777388400000" class="datepicker-cell day prev">29</span><span data-date="1777474800000" class="datepicker-cell day prev">30</span><span data-date="1777561200000" class="datepicker-cell day">1</span><span data-date="1777647600000" class="datepicker-cell day text-primary">2</span><span data-date="1777734000000" class="datepicker-cell day text-danger">3</span><span data-date="1777820400000" class="datepicker-cell day">4</span><span data-date="1777906800000" class="datepicker-cell day">5</span><span data-date="1777993200000" class="datepicker-cell day today focused">6</span><span data-date="1778079600000" class="datepicker-cell day">7</span><span data-date="1778166000000" class="datepicker-cell day">8</span><span data-date="1778252400000" class="datepicker-cell day text-primary">9</span><span data-date="1778338800000" class="datepicker-cell day text-danger">10</span><span data-date="1778425200000" class="datepicker-cell day">11</span><span data-date="1778511600000" class="datepicker-cell day">12</span><span data-date="1778598000000" class="datepicker-cell day">13</span><span data-date="1778684400000" class="datepicker-cell day">14</span><span data-date="1778770800000" class="datepicker-cell day">15</span><span data-date="1778857200000" class="datepicker-cell day text-primary">16</span><span data-date="1778943600000" class="datepicker-cell day text-danger">17</span><span data-date="1779030000000" class="datepicker-cell day">18</span><span data-date="1779116400000" class="datepicker-cell day">19</span><span data-date="1779202800000" class="datepicker-cell day">20</span><span data-date="1779289200000" class="datepicker-cell day">21</span><span data-date="1779375600000" class="datepicker-cell day">22</span><span data-date="1779462000000" class="datepicker-cell day text-primary">23</span><span data-date="1779548400000" class="datepicker-cell day text-danger">24</span><span data-date="1779634800000" class="datepicker-cell day">25</span><span data-date="1779721200000" class="datepicker-cell day">26</span><span data-date="1779807600000" class="datepicker-cell day">27</span><span data-date="1779894000000" class="datepicker-cell day">28</span><span data-date="1779980400000" class="datepicker-cell day">29</span><span data-date="1780066800000" class="datepicker-cell day text-primary">30</span><span data-date="1780153200000" class="datepicker-cell day text-danger">31</span><span data-date="1780239600000" class="datepicker-cell day next">1</span><span data-date="1780326000000" class="datepicker-cell day next">2</span><span data-date="1780412400000" class="datepicker-cell day next">3</span><span data-date="1780498800000" class="datepicker-cell day next">4</span><span data-date="1780585200000" class="datepicker-cell day next">5</span><span data-date="1780671600000" class="datepicker-cell day next text-primary">6</span></div></div></div></div><div class="datepicker-footer"><div class="datepicker-controls"><button type="button" class="btn today-button today-btn" tabindex="-1" style="display: none;">오늘</button><button type="button" class="btn clear-button clear-btn" tabindex="-1" style="display: none;">삭제</button></div></div></div></div><div class="datepicker datepicker-dropdown datepicker-orient-left datepicker-orient-top" style="left: 558.156px; top: 541.547px;"><div class="datepicker-picker"><div class="datepicker-header"><div class="datepicker-title" style="display: none;"></div><div class="datepicker-controls"><button type="button" class="btn prev-button prev-btn" tabindex="-1">«</button><button type="button" class="btn view-switch" tabindex="-1">2026년 05월</button><button type="button" class="btn next-button next-btn" tabindex="-1">»</button></div></div><div class="datepicker-main"><div class="datepicker-view"><div class="days"><div class="days-of-week"><span class="dow">일</span><span class="dow">월</span><span class="dow">화</span><span class="dow">수</span><span class="dow">목</span><span class="dow">금</span><span class="dow">토</span></div><div class="datepicker-grid"><span data-date="1777129200000" class="datepicker-cell day prev text-danger">26</span><span data-date="1777215600000" class="datepicker-cell day prev">27</span><span data-date="1777302000000" class="datepicker-cell day prev">28</span><span data-date="1777388400000" class="datepicker-cell day prev">29</span><span data-date="1777474800000" class="datepicker-cell day prev">30</span><span data-date="1777561200000" class="datepicker-cell day">1</span><span data-date="1777647600000" class="datepicker-cell day text-primary">2</span><span data-date="1777734000000" class="datepicker-cell day text-danger">3</span><span data-date="1777820400000" class="datepicker-cell day">4</span><span data-date="1777906800000" class="datepicker-cell day">5</span><span data-date="1777993200000" class="datepicker-cell day today focused">6</span><span data-date="1778079600000" class="datepicker-cell day">7</span><span data-date="1778166000000" class="datepicker-cell day">8</span><span data-date="1778252400000" class="datepicker-cell day text-primary">9</span><span data-date="1778338800000" class="datepicker-cell day text-danger">10</span><span data-date="1778425200000" class="datepicker-cell day">11</span><span data-date="1778511600000" class="datepicker-cell day">12</span><span data-date="1778598000000" class="datepicker-cell day">13</span><span data-date="1778684400000" class="datepicker-cell day">14</span><span data-date="1778770800000" class="datepicker-cell day">15</span><span data-date="1778857200000" class="datepicker-cell day text-primary">16</span><span data-date="1778943600000" class="datepicker-cell day text-danger">17</span><span data-date="1779030000000" class="datepicker-cell day">18</span><span data-date="1779116400000" class="datepicker-cell day">19</span><span data-date="1779202800000" class="datepicker-cell day">20</span><span data-date="1779289200000" class="datepicker-cell day">21</span><span data-date="1779375600000" class="datepicker-cell day">22</span><span data-date="1779462000000" class="datepicker-cell day text-primary">23</span><span data-date="1779548400000" class="datepicker-cell day text-danger">24</span><span data-date="1779634800000" class="datepicker-cell day">25</span><span data-date="1779721200000" class="datepicker-cell day">26</span><span data-date="1779807600000" class="datepicker-cell day">27</span><span data-date="1779894000000" class="datepicker-cell day">28</span><span data-date="1779980400000" class="datepicker-cell day">29</span><span data-date="1780066800000" class="datepicker-cell day text-primary">30</span><span data-date="1780153200000" class="datepicker-cell day text-danger">31</span><span data-date="1780239600000" class="datepicker-cell day next">1</span><span data-date="1780326000000" class="datepicker-cell day next">2</span><span data-date="1780412400000" class="datepicker-cell day next">3</span><span data-date="1780498800000" class="datepicker-cell day next">4</span><span data-date="1780585200000" class="datepicker-cell day next">5</span><span data-date="1780671600000" class="datepicker-cell day next text-primary">6</span></div></div></div></div><div class="datepicker-footer"><div class="datepicker-controls"><button type="button" class="btn today-button today-btn" tabindex="-1" style="display: none;">오늘</button><button type="button" class="btn clear-button clear-btn" tabindex="-1" style="display: none;">삭제</button></div></div></div></div></body></html>

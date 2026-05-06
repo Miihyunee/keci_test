@@ -1,0 +1,49 @@
+@import url('/fonts/Pretendard/font.css');
+
+html, body {
+    font-family: 'Pretendard', Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* sidebar */
+.nav-sidebar {
+    user-select: none;
+}
+.toggle-icon {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+.toggle-icon.expanded {
+    transform: rotate(90deg);
+}
+
+table.table.dataTable {
+    font-size: .875em;
+
+    thead{
+        background-color: #DEEEFF;
+        border-style: hidden;
+        tr th {
+            background-color: #DEEEFF !important;
+            border-style: hidden;
+            padding-left: .625rem;
+            padding-right: .625rem;
+        }
+    }
+    td{
+        padding-left: .625rem;
+        padding-right: .625rem;
+    }
+}
+
+.dt-container .datatable-header{
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-read-only.ck-column-resize_disabled.ck-blurred {
+    max-height: none !important;
+    height: auto !important;
+    overflow: visible !important;
+    min-height: 500px;
+}
